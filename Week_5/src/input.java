@@ -1,6 +1,6 @@
 //--------------------------------------------------------
 // Lab 5 Exercise 1  Kip Brower 08/04/2020
-//input.java
+// input.java
 //
 //--------------------------------------------------------
 /* a) Create a text file called "input.csv" which contains the following three lines of numbers,
@@ -19,29 +19,37 @@ ROW 3: 5
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
+import java.util.regex.Pattern;
+
 
 public class input {
 
 	public static void main(String[] args) throws FileNotFoundException {
-	
-		int num, row1max, row2max, row3max;
+		
+		String rows = null, row1, row2, row3;
+		Scanner row1Scan, row2Scan, row3Scan;
+		
 	File f = new File("/Users/kipbrower/Desktop/input1.csv");
-	Scanner fileScan = new Scanner(f);
+	Scanner file = new Scanner(f);
 
+	while (file.hasNext())
+		rows = file.toString();
+		System.out.println(rows);
+		System.out.println();
 	
+	
+	/*System.out.println(fileScan.nextLine());
+	System.out.println();
 	System.out.println(fileScan.nextLine());
 	System.out.println();
-	//scan the first row for the largest integer
-	//print the largest integer in the row
 	System.out.println(fileScan.nextLine());
-	System.out.println();
-	System.out.println(fileScan.nextLine());
-	System.out.println();
+	System.out.println();*/
+	
+	}}
 	
 	
-	}
-	
-	}
-	
+
+
 
 
